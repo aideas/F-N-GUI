@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGUI", "NGUI\NGUI.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGUI.Editor", "NGUI.Editor\NGUI.Editor.csproj", "{D58107ED-C059-46EB-B96C-3265D56F94CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGUI", "FGUI\FGUI.csproj", "{D52F074A-5FB8-441A-8A21-7A9F94238AA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D58107ED-C059-46EB-B96C-3265D56F94CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D58107ED-C059-46EB-B96C-3265D56F94CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D58107ED-C059-46EB-B96C-3265D56F94CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52F074A-5FB8-441A-8A21-7A9F94238AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52F074A-5FB8-441A-8A21-7A9F94238AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52F074A-5FB8-441A-8A21-7A9F94238AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52F074A-5FB8-441A-8A21-7A9F94238AA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
