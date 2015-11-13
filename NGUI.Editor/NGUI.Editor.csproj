@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D58107ED-C059-46EB-B96C-3265D56F94CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NGUI.Editor</RootNamespace>
+    <AssemblyName>NGUI.Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\Lib\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Lib\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editor\ActiveAnimationEditor.cs" />
+    <Compile Include="Editor\BMFontReader.cs" />
+    <Compile Include="Editor\ComponentSelector.cs" />
+    <Compile Include="Editor\EventDelegateEditor.cs" />
+    <Compile Include="Editor\NGUIContextMenu.cs" />
+    <Compile Include="Editor\NGUIEditorTools.cs" />
+    <Compile Include="Editor\NGUIHandles.cs" />
+    <Compile Include="Editor\NGUIHelp.cs" />
+    <Compile Include="Editor\NGUIJson.cs" />
+    <Compile Include="Editor\NGUIMenu.cs" />
+    <Compile Include="Editor\NGUISelectionTools.cs" />
+    <Compile Include="Editor\NGUISettings.cs" />
+    <Compile Include="Editor\NGUISnap.cs" />
+    <Compile Include="Editor\NGUITransformInspector.cs" />
+    <Compile Include="Editor\SpriteSelector.cs" />
+    <Compile Include="Editor\TweenAlphaEditor.cs" />
+    <Compile Include="Editor\TweenColorEditor.cs" />
+    <Compile Include="Editor\TweenFOVEditor.cs" />
+    <Compile Include="Editor\TweenHeightEditor.cs" />
+    <Compile Include="Editor\TweenOrthoSizeEditor.cs" />
+    <Compile Include="Editor\TweenPositionEditor.cs" />
+    <Compile Include="Editor\TweenRotationEditor.cs" />
+    <Compile Include="Editor\TweenScaleEditor.cs" />
+    <Compile Include="Editor\TweenTransformEditor.cs" />
+    <Compile Include="Editor\TweenVolumeEditor.cs" />
+    <Compile Include="Editor\TweenWidthEditor.cs" />
+    <Compile Include="Editor\UI2DSpriteEditor.cs" />
+    <Compile Include="Editor\UIAnchorEditor.cs" />
+    <Compile Include="Editor\UIAtlasInspector.cs" />
+    <Compile Include="Editor\UIAtlasMaker.cs" />
+    <Compile Include="Editor\UIButtonColorEditor.cs" />
+    <Compile Include="Editor\UIButtonEditor.cs" />
+    <Compile Include="Editor\UIButtonMessageEditor.cs" />
+    <Compile Include="Editor\UICameraEditor.cs" />
+    <Compile Include="Editor\UICameraTool.cs" />
+    <Compile Include="Editor\UICreateNewUIWizard.cs" />
+    <Compile Include="Editor\UICreateWidgetWizard.cs" />
+    <Compile Include="Editor\UIDragObjectEditor.cs" />
+    <Compile Include="Editor\UIDrawCallInspector.cs" />
+    <Compile Include="Editor\UIDrawCallViewer.cs" />
+    <Compile Include="Editor\UIEventTriggerEditor.cs" />
+    <Compile Include="Editor\UIFontInspector.cs" />
+    <Compile Include="Editor\UIFontMaker.cs" />
+    <Compile Include="Editor\UIForwardEventsEditor.cs" />
+    <Compile Include="Editor\UIGridEditor.cs" />
+    <Compile Include="Editor\UIImageButtonInspector.cs" />
+    <Compile Include="Editor\UIInputEditor.cs" />
+    <Compile Include="Editor\UILabelInspector.cs" />
+    <Compile Include="Editor\UIPanelInspector.cs" />
+    <Compile Include="Editor\UIPanelTool.cs" />
+    <Compile Include="Editor\UIPlayAnimationEditor.cs" />
+    <Compile Include="Editor\UIPlayTweenEditor.cs" />
+    <Compile Include="Editor\UIPopupListInspector.cs" />
+    <Compile Include="Editor\UIProgressBarEditor.cs" />
+    <Compile Include="Editor\UIRectEditor.cs" />
+    <Compile Include="Editor\UIRootEditor.cs" />
+    <Compile Include="Editor\UIScrollBarEditor.cs" />
+    <Compile Include="Editor\UIScrollViewEditor.cs" />
+    <Compile Include="Editor\UISliderEditor.cs" />
+    <Compile Include="Editor\UISpriteAnimationInspector.cs" />
+    <Compile Include="Editor\UISpriteInspector.cs" />
+    <Compile Include="Editor\UIStretchEditor.cs" />
+    <Compile Include="Editor\UITableEditor.cs" />
+    <Compile Include="Editor\UITextureInspector.cs" />
+    <Compile Include="Editor\UITexturePacker.cs" />
+    <Compile Include="Editor\UIToggleInspector.cs" />
+    <Compile Include="Editor\UITweenerEditor.cs" />
+    <Compile Include="Editor\UIWidgetContainerEditor.cs" />
+    <Compile Include="Editor\UIWidgetInspector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NGUI\NGUI.csproj">
+      <Project>{62a5f419-dea8-4422-85a6-434075d1e0e9}</Project>
+      <Name>NGUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

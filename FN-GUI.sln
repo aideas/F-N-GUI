@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGUI", "NGUI\NGUI.csproj", "{62A5F419-DEA8-4422-85A6-434075D1E0E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGUI.Editor", "NGUI.Editor\NGUI.Editor.csproj", "{D58107ED-C059-46EB-B96C-3265D56F94CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{62A5F419-DEA8-4422-85A6-434075D1E0E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62A5F419-DEA8-4422-85A6-434075D1E0E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62A5F419-DEA8-4422-85A6-434075D1E0E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58107ED-C059-46EB-B96C-3265D56F94CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58107ED-C059-46EB-B96C-3265D56F94CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58107ED-C059-46EB-B96C-3265D56F94CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58107ED-C059-46EB-B96C-3265D56F94CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
