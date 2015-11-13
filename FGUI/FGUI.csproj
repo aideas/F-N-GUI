@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D52F074A-5FB8-441A-8A21-7A9F94238AA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FGUI</RootNamespace>
+    <AssemblyName>FGUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DOTween">
+      <HintPath>..\Lib\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\Lib\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Container.cs" />
+    <Compile Include="Core\DisplayObject.cs" />
+    <Compile Include="Core\Image.cs" />
+    <Compile Include="Core\MaterialManager.cs" />
+    <Compile Include="Core\MovieClip.cs" />
+    <Compile Include="Core\NTexture.cs" />
+    <Compile Include="Core\PlayState.cs" />
+    <Compile Include="Core\QuadBatch.cs" />
+    <Compile Include="Core\ShaderConfig.cs" />
+    <Compile Include="Core\Shape.cs" />
+    <Compile Include="Core\Stage.cs" />
+    <Compile Include="Core\Text\BaseFont.cs" />
+    <Compile Include="Core\Text\BitmapFont.cs" />
+    <Compile Include="Core\Text\DynamicFont.cs" />
+    <Compile Include="Core\Text\FontManager.cs" />
+    <Compile Include="Core\Text\Highlighter.cs" />
+    <Compile Include="Core\Text\IMobileInputAdapter.cs" />
+    <Compile Include="Core\Text\InputCaret.cs" />
+    <Compile Include="Core\Text\IRichTextObjectFactory.cs" />
+    <Compile Include="Core\Text\MobileInputAdapter.cs" />
+    <Compile Include="Core\Text\RichTextField.cs" />
+    <Compile Include="Core\Text\RichTextObjectFactory.cs" />
+    <Compile Include="Core\Text\TextField.cs" />
+    <Compile Include="Core\Text\TextFormat.cs" />
+    <Compile Include="Core\UpdateContext.cs" />
+    <Compile Include="Event\EventContext.cs" />
+    <Compile Include="Event\EventDispatcher.cs" />
+    <Compile Include="Event\EventListener.cs" />
+    <Compile Include="Event\InputEvent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Controller.cs" />
+    <Compile Include="UI\FieldTypes.cs" />
+    <Compile Include="UI\GButton.cs" />
+    <Compile Include="UI\GComboBox.cs" />
+    <Compile Include="UI\GComponent.cs" />
+    <Compile Include="UI\GearAnimation.cs" />
+    <Compile Include="UI\GearBase.cs" />
+    <Compile Include="UI\GearColor.cs" />
+    <Compile Include="UI\GearDisplay.cs" />
+    <Compile Include="UI\GearLook.cs" />
+    <Compile Include="UI\GearSize.cs" />
+    <Compile Include="UI\GearXY.cs" />
+    <Compile Include="UI\GGraph.cs" />
+    <Compile Include="UI\GGroup.cs" />
+    <Compile Include="UI\GImage.cs" />
+    <Compile Include="UI\GLabel.cs" />
+    <Compile Include="UI\GList.cs" />
+    <Compile Include="UI\GLoader.cs" />
+    <Compile Include="UI\GMovieClip.cs" />
+    <Compile Include="UI\GObject.cs" />
+    <Compile Include="UI\GObjectPool.cs" />
+    <Compile Include="UI\GProgressBar.cs" />
+    <Compile Include="UI\GRichTextField.cs" />
+    <Compile Include="UI\GRoot.cs" />
+    <Compile Include="UI\GScrollBar.cs" />
+    <Compile Include="UI\GSlider.cs" />
+    <Compile Include="UI\GSwfObject.cs" />
+    <Compile Include="UI\GTextField.cs" />
+    <Compile Include="UI\GTextInput.cs" />
+    <Compile Include="UI\IAnimationGear.cs" />
+    <Compile Include="UI\IColorGear.cs" />
+    <Compile Include="UI\IUISource.cs" />
+    <Compile Include="UI\Margin.cs" />
+    <Compile Include="UI\PackageItem.cs" />
+    <Compile Include="UI\PageOption.cs" />
+    <Compile Include="UI\PageOptionSet.cs" />
+    <Compile Include="UI\PopupMenu.cs" />
+    <Compile Include="UI\RelationItem.cs" />
+    <Compile Include="UI\Relations.cs" />
+    <Compile Include="UI\ScrollPane.cs" />
+    <Compile Include="UI\Transition.cs" />
+    <Compile Include="UI\UIConfig.cs" />
+    <Compile Include="UI\UIObjectFactory.cs" />
+    <Compile Include="UI\UIPackage.cs" />
+    <Compile Include="UI\Window.cs" />
+    <Compile Include="Utils\HtmlParser.cs" />
+    <Compile Include="Utils\Timers.cs" />
+    <Compile Include="Utils\ToolSet.cs" />
+    <Compile Include="Utils\UBBParser.cs" />
+    <Compile Include="Utils\XML.cs" />
+    <Compile Include="Utils\XMLList.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
